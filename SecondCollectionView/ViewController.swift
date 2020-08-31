@@ -32,7 +32,6 @@ class ViewController: UIViewController {
     
     var collectionViewFlowLayout: UICollectionViewFlowLayout!
     let cellIdentifier = "ItemCollectionViewCell"
-    let viewImageSegueIdentifier = "viewImageSegueIdentifier"
     
     let lineSpacing: CGFloat = 5
     let interItemSpacing: CGFloat = 5

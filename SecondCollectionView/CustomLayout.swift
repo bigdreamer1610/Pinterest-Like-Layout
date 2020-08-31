@@ -33,11 +33,12 @@ class CustomLayout: UICollectionViewLayout {
         return CGSize(width: contentWidth, height: contentHeight)
     }
     
+    
     override func prepare() {
         guard cache.isEmpty, let collectionView = collectionView else {
             return
         }
-        
+        //get column width
         let columnWidth = contentWidth / CGFloat(numOfCols)
         var xOffset = [CGFloat]()
         for column in 0..<numOfCols {
